@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KakaoWeb.Server", "KakaoWeb\Server\KakaoWeb.Server.csproj", "{BAE0BD4C-CB03-43AE-9661-7C73C420DFA7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KakaoWeb.Client", "KakaoWeb\Client\KakaoWeb.Client.csproj", "{30CF2F72-6C2B-4232-9CBC-A2E06CB38145}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KakaoWeb.Shared", "KakaoWeb\Shared\KakaoWeb.Shared.csproj", "{8E199F5E-D925-43CF-A28A-A33A27B84A18}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BAE0BD4C-CB03-43AE-9661-7C73C420DFA7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BAE0BD4C-CB03-43AE-9661-7C73C420DFA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BAE0BD4C-CB03-43AE-9661-7C73C420DFA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BAE0BD4C-CB03-43AE-9661-7C73C420DFA7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{30CF2F72-6C2B-4232-9CBC-A2E06CB38145}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30CF2F72-6C2B-4232-9CBC-A2E06CB38145}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30CF2F72-6C2B-4232-9CBC-A2E06CB38145}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30CF2F72-6C2B-4232-9CBC-A2E06CB38145}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E199F5E-D925-43CF-A28A-A33A27B84A18}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E199F5E-D925-43CF-A28A-A33A27B84A18}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E199F5E-D925-43CF-A28A-A33A27B84A18}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E199F5E-D925-43CF-A28A-A33A27B84A18}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3B771046-318F-4126-8849-67695BD9AAD5}
+	EndGlobalSection
+EndGlobal

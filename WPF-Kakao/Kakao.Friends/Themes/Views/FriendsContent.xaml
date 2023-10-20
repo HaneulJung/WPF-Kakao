@@ -1,0 +1,44 @@
+<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:views="clr-namespace:Kakao.Friends.UI.Views"
+    xmlns:birth="clr-namespace:Kakao.Friends.Birth.UI.Units;assembly=Kakao.Friends.Birth"
+    xmlns:favorites="clr-namespace:Kakao.Friends.Favorites.UI.Units;assembly=Kakao.Friends.Favorites">
+
+    <Style TargetType="{x:Type views:FriendsContent}">
+        <Setter Property="Background" Value="White"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type views:FriendsContent}">
+                    <Border Background="{TemplateBinding Background}"
+                            BorderBrush="{TemplateBinding BorderBrush}"
+                            BorderThickness="{TemplateBinding BorderThickness}">
+                        <StackPanel Margin="10">
+                            <TextBlock Text="Friends"
+                                       FontSize="24"/>
+
+                            <birth:BirthdaysBox Tag="Friends With Birthdays"
+                                                ItemsSource="{Binding Birthdays}"/>
+
+                            <favorites:FavoritesBox Tag="Favorites"
+                                                    DoubleClickCommand="{Binding DoubleClickCommand}"
+                                                    ItemsSource="{Binding Favorites}"/>
+
+                            <Button Content="ShowSimulator"
+                                    Margin="10"
+                                    Padding="8 4 8 4"
+                                    HorizontalAlignment="Left"
+                                    Command="{Binding ShowSimulatorCommand}"/>
+
+                            <Button Content="SyncFriends"
+                                    Margin="10"
+                                    Padding="8 4 8 4"
+                                    HorizontalAlignment="Left"
+                                    Command="{Binding SyncFriendsCommand}"/>
+                        </StackPanel>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</ResourceDictionary>
